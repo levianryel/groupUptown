@@ -9,9 +9,29 @@
             InitializeComponent();
         }
 
-       private void OnButtonClicked(object sender, EventArgs e)
-     {
-    DisplayAlert("Message", "Button Clicked!", "OK");
-       }
+      private async void OnHomeClicked(object sender, EventArgs e)
+ {
+     await DisplayAlert("Home", "Home button clicked!", "OK");
+ }
+
+ private async void OnProfileClicked(object sender, EventArgs e)
+ {
+     await DisplayAlert("Profile", "Profile button clicked!", "OK");
+ }
+
+ private async void OnSettingsClicked(object sender, EventArgs e)
+ {
+     await DisplayAlert("Settings", "Settings button clicked!", "OK");
+ }
+
+ private async void OnAboutClicked(object sender, EventArgs e)
+ {
+     await DisplayAlert("About Us", "About Us button clicked!", "OK");
+ }
+
+ private async void OnShortcutClicked(object sender, EventArgs e)
+ {
+     await DisplayAlert("Shortcut", "Shortcut button clicked!", "OK");
+ }
     }
 }
