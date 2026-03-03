@@ -4,28 +4,27 @@
              x:Class="groupUptownFile.MainPage">
 
     <ScrollView>
-         <VerticalStackLayout 
-            Padding="30"
-            Spacing="20">
 
-            <Label 
-                Text="Welcome to My MAUI App"
-                FontSize="24"
-                HorizontalOptions="Center" />
+    
+    <VerticalStackLayout 
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="Center">
 
-            <Image 
-                Source="dotnet_bot.png"
-                HeightRequest="150"
-                HorizontalOptions="Center" />
+        <Label 
+            Text="Main Menu"
+            FontSize="28"
+            HorizontalOptions="Center" />
 
-            <Entry 
-                Placeholder="Enter your name" />
+       
+        <Button Text="Home" Clicked="OnHomeClicked"/>
+        <Button Text="Profile" Clicked="OnProfileClicked"/>
+        <Button Text="Settings" Clicked="OnSettingsClicked"/>
+        <Button Text="About Us" Clicked="OnAboutClicked"/>
+        <Button Text="Shortcut" Clicked="OnShortcutClicked"/>
 
-            <Button 
-                Text="Submit"
-                Clicked="OnButtonClicked" />
+    </VerticalStackLayout>
 
-        </VerticalStackLayout>
-    </ScrollView>
+</ScrollView>
 
 </ContentPage>
